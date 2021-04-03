@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AzureTrainingModelStoreContainer" CdmEntityContainer="AzureTrainingEntities">
+    <EntitySetMapping Name="EmailMessages">
+      <EntityTypeMapping TypeName="AzureTrainingModel.EmailMessage">
+        <MappingFragment StoreEntitySet="EmailMessages">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="FromEmailId" ColumnName="FromEmailId" />
+          <ScalarProperty Name="ToEmailIds" ColumnName="ToEmailIds" />
+          <ScalarProperty Name="CCEmailIds" ColumnName="CCEmailIds" />
+          <ScalarProperty Name="HasAttachment" ColumnName="HasAttachment" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="SentDate" ColumnName="SentDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

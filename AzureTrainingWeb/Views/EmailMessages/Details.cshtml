@@ -1,0 +1,91 @@
+﻿@model AzureTrainingDBLib.EmailMessage
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EmailMessage</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Subject)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Subject)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Message)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Message)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FromEmailId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FromEmailId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ToEmailIds)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ToEmailIds)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CCEmailIds)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CCEmailIds)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HasAttachment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HasAttachment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SentDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SentDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

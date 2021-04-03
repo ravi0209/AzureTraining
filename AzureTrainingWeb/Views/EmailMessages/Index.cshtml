@@ -1,0 +1,82 @@
+﻿@model IEnumerable<AzureTrainingDBLib.EmailMessage>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Subject)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Message)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FromEmailId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ToEmailIds)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CCEmailIds)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HasAttachment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SentDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Subject)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Message)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FromEmailId)
+        </td>
+        <td style="word-break:normal">
+            @Html.DisplayFor(modelItem => item.ToEmailIds)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CCEmailIds)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HasAttachment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td style="white-space:nowrap">
+            @Html.DisplayFor(modelItem => item.CreatedDate)
+        </td>
+        <td style="white-space:nowrap">
+            @Html.DisplayFor(modelItem => item.SentDate)
+        </td>
+        <td style="white-space:nowrap">
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

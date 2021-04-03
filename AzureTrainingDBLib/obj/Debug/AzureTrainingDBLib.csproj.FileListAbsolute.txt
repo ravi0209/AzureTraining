@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\AzureTrainingDBLib\bin\Debug\AzureTrainingDBLib.dll.config
+C:\Users\User\source\repos\AzureTrainingDBLib\bin\Debug\AzureTrainingDBLib.dll
+C:\Users\User\source\repos\AzureTrainingDBLib\bin\Debug\AzureTrainingDBLib.pdb
+C:\Users\User\source\repos\AzureTrainingDBLib\bin\Debug\EntityFramework.dll
+C:\Users\User\source\repos\AzureTrainingDBLib\bin\Debug\EntityFramework.xml
+C:\Users\User\source\repos\AzureTrainingDBLib\obj\Debug\AzureTrainingDBLib.csprojAssemblyReference.cache
+C:\Users\User\source\repos\AzureTrainingDBLib\obj\Debug\AzureTrainingDBLib.csproj.CopyComplete
+C:\Users\User\source\repos\AzureTrainingDBLib\obj\Debug\AzureTrainingDBLib.dll
+C:\Users\User\source\repos\AzureTrainingDBLib\obj\Debug\AzureTrainingDBLib.pdb
+C:\Users\User\source\repos\AzureTrainingDBLib\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\source\repos\AzureTrainingDBLib\bin\Debug\EntityFramework.SqlServer.xml
